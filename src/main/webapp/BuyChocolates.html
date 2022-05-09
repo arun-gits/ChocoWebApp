@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Buy Chocolates</title>
+</head>
+<body>
+
+<!-- <table border="1" width="50%" align="center">
+<thead>
+<th>Sl.no</th>
+<th>Chocolate</th>
+<th>Quantity</th>
+<th>Price</th>
+</thead>
+<tbody id="list">
+
+
+</tbody>
+</table>
+
+<script>
+function buy(){
+	let list =localStorage.getItem('Chocoslist');
+	let email = localStorage.getItem('sessionEmail');
+	const url = "http://localhost:8088/Chocodemo/BuyChocolates?list="+list+"&sessionEmail="+email;
+	fetch(url).then(res=>res.text()).then(res=>{
+		let out = res;
+		alert(res);
+	});
+}
+</script>
+-->
+ <h1 style="text-align:center; color:white; padding-top:4%;">Order chocolates</h1>
+ <div style="text-align:center">
+<h1>Order placed successfully</h1>
+<h4>Redirecting you to main page....</h4>
+</div>
+<script >
+// let list =JSON.stringify(localStorage.getItem('Chocoslist'));
+let email = localStorage.getItem('sessionEmail');
+let id = 0;
+let mode = "buy";
+console.log(email);
+console.log(mode);
+const url = "http://localhost:8080/ChocoWebDemo/BuyChocolates?mode="+mode+"&sessionEmail="+email+"&id="+id;
+fetch(url).then(res=>res.text()).then(res=>{
+	let out = res;
+	alert(res);
+	
+	setTimeout(function(){window.location.replace('UserHome.html');},3000);
+});
+</script>
+</body>
+</html>

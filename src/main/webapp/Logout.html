@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Logout</title>
+</head>
+<body>
+<div style="text-align:center">
+<h1>Thanks for shopping</h1>
+<h4>Redirecting you to main page....</h4>
+</div>
+<script>
+localStorage.removeItem('sessionEmail');
+setTimeout(function(){window.location.replace('Registration.html');},3000);
+</script>
+</body>
+</html>

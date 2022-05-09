@@ -1,0 +1,109 @@
+@import "compass/css3";
+
+html, body {
+	overflow: auto;
+	background-image:
+		url('chocolate.jpg');
+	background-size: cover;
+	background-position: center;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 5px;
+	word-spacing: 15px;
+}
+
+h1 {
+	padding: 25px;
+	color: white;
+	text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.50)
+}
+
+.box {
+	display: block;
+	height: 300px;
+	max-width: 425px;
+	margin: 0 auto;
+	margin-top: 200px;
+	text-align: center;
+	background: rgba(30, 41, 60, 0.7);
+	-webkit-box-shadow: 5px 8px 12px 0px rgba(30, 30, 30, 0.65);
+	-moz-box-shadow: 5px 8px 12px 0px rgba(30, 30, 30, 0.65);
+	box-shadow: 5px 8px 24px 0px rgba(30, 30, 30, 0.65);
+}
+
+.form-group {
+	padding-top: 25px;
+	border: none;
+	max-width: 350px;
+	margin: 0 auto;
+}
+
+.form-control {
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	color: white;
+	border-bottom: 2px solid white;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, 0.40)
+}
+
+.form-control:focus {
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	color: #9affde;
+	border-bottom: 2px solid #9affde;
+	text-shadow: 2px 2px 4px rgba(45, 45, 45, 0.68);
+}
+
+.btn {
+	border: none;
+	letter-spacing: 2px;
+	margin: 80px 00px 50px 0px;
+	padding: 12px;
+	width: 50%;
+	max-width: 300px;
+	border-radius: 14px;
+	background: #fc8671;
+	text-shadow: 2px 2px 4px rgba(45, 45, 45, 0.68);
+}
+
+.submit {
+	
+	margin-top:10%;
+	letter-spacing: 2px;
+	border: none;
+	padding: 12px;
+	width: 50%;
+	max-width: 300px;
+	border-radius: 14px;
+	background: #fc8671;
+	text-shadow: 2px 2px 4px rgba(45, 45, 45, 0.68);
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+	border: none;
+	background: #9affde;
+	text-shadow: 2px 2px 4px rgba(45, 45, 45, 0.68);
+}
+
+.btn:hover {
+	border: none;
+	background: #d06f5e;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, 0.40)
+}
+
+.form-control::-webkit-input-placeholder {
+	color: white;
+}
+
+.form-control:-moz-placeholder {
+	color: white;
+}
+
+.form-control::-moz-placeholder {
+	color: white;
+}
+
+.form-control:-ms-input-placeholder {
+	color: white;
+}
